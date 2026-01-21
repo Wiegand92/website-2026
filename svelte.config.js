@@ -7,12 +7,14 @@ const config = {
 	// for more information about preprocessors
 	preprocess: vitePreprocess(),
 
-	kit: { adapter: adapter({
-      fallback: 'index.html' // Serves index.html for unprerendered routes
-    }) },
-	paths: {
-		relative: false,
-		base: process.env.NODE_ENV === 'production' ? '/website-2026' : ''
+	kit: { 
+		adapter: adapter({
+      		fallback: 'index.html' // Serves index.html for unprerendered routes
+		}), 
+		paths: {
+			base: '/website-2026',
+			relative: false
+		}
 	}
 };
 
