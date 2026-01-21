@@ -12,7 +12,7 @@ const config = {
     }) },
 	paths: {
 		relative: false,
-		base: process.argv.includes('dev') ? '' : "/website-2026"
+		base: process.env.NODE_ENV === 'production' ? '/website-2026' : ''
 	}
 };
 
