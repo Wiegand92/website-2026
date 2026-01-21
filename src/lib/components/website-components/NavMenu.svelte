@@ -1,12 +1,13 @@
 <script lang="ts">
   import * as NavigationMenu from "$lib/components/ui/navigation-menu/index.js";
   import * as Drawer from "$lib/components/ui/drawer/index.js";
-
+  import {base} from '$app/paths';
   // Common styling for consistency between links and triggers
   const navItemStyle = "text-lg bg-(none) p-2 mx-2";
   const menuItemStyle = "text-(--bbtb-foreground)"
   const menuStyle = "flex flex-col justify-center top-10 bg-(--bbtb-background) p-4 shadow-lg rounded-md z-10";
   const mobileMenuStyle = "bg-(--bbtb-background) p-4 shadow-lg rounded-md";
+  console.log(base)
 </script>
 
 <NavigationMenu.Root>
@@ -15,7 +16,7 @@
     
     <!-- Home (Direct Link) -->
     <NavigationMenu.Item>
-      <NavigationMenu.Link href="/" class={navItemStyle}>
+      <NavigationMenu.Link href="{base}/" class={navItemStyle}>
         Home
       </NavigationMenu.Link>
     </NavigationMenu.Item>
@@ -26,8 +27,8 @@
         About
       </NavigationMenu.Trigger>
       <NavigationMenu.Content class={menuStyle}>
-        <NavigationMenu.Link href="/about/mission" class={menuItemStyle}>Mission</NavigationMenu.Link>
-        <NavigationMenu.Link href="/about/team" class={menuItemStyle}>Team</NavigationMenu.Link>
+        <NavigationMenu.Link href="{base}/about/mission" class={menuItemStyle}>Mission</NavigationMenu.Link>
+        <NavigationMenu.Link href="{base}/about/team" class={menuItemStyle}>Team</NavigationMenu.Link>
       </NavigationMenu.Content>
     </NavigationMenu.Item>
 
@@ -38,8 +39,8 @@
       </NavigationMenu.Trigger>
       <NavigationMenu.Content class={menuStyle}>
         <NavigationMenu.Link href="https://docs.google.com/forms/d/e/1FAIpQLSex7ofV5lnFsOv8iaiE3gnFHlf3VlCpBAWfHtzSpVJ35lUb3g/viewform?usp=header" class={menuItemStyle}>Request Books</NavigationMenu.Link>
-        <NavigationMenu.Link href="/about/books" class={menuItemStyle}>Our Books</NavigationMenu.Link>
-        <!-- <NavigationMenu.Link href="/about/books" class={menuItemStyle}>FAQ</NavigationMenu.Link> -->
+        <NavigationMenu.Link href="{base}/about/books" class={menuItemStyle}>Our Books</NavigationMenu.Link>
+        <!-- <NavigationMenu.Link href="{base}/about/books" class={menuItemStyle}>FAQ</NavigationMenu.Link> -->
       </NavigationMenu.Content>
     </NavigationMenu.Item>
 
@@ -49,15 +50,15 @@
         Resources
       </NavigationMenu.Trigger>
       <NavigationMenu.Content class={menuStyle}>
-        <NavigationMenu.Link href="/resources/how-to" class={menuItemStyle}>How to Guides</NavigationMenu.Link>
-        <NavigationMenu.Link href="/resources/state-coip" class={menuItemStyle}>State Resources for Children</NavigationMenu.Link>
-        <NavigationMenu.Link href="/resources/national-coip" class={menuItemStyle}>National Resources for Children</NavigationMenu.Link>
+        <NavigationMenu.Link href="{base}/resources/how-to" class={menuItemStyle}>How to Guides</NavigationMenu.Link>
+        <NavigationMenu.Link href="{base}/resources/state-coip" class={menuItemStyle}>State Resources for Children</NavigationMenu.Link>
+        <NavigationMenu.Link href="{base}/resources/national-coip" class={menuItemStyle}>National Resources for Children</NavigationMenu.Link>
       </NavigationMenu.Content>
     </NavigationMenu.Item>
 
     <!-- Contact Us (Direct Link) -->
     <NavigationMenu.Item>
-      <NavigationMenu.Link href="/contact" class={navItemStyle}>
+      <NavigationMenu.Link href="{base}/contact" class={navItemStyle}>
         Contact Us
       </NavigationMenu.Link>
     </NavigationMenu.Item>
@@ -70,7 +71,7 @@
       </NavigationMenu.Trigger>
       <NavigationMenu.Content class={menuStyle}>
         <NavigationMenu.Link href="https://secure.givelively.org/donate/building-bonds-through-books" class={menuItemStyle}>Donate Online</NavigationMenu.Link>
-        <!-- <NavigationMenu.Link href="/about/team" class={menuItemStyle}>Amazon Wishlist</NavigationMenu.Link> -->
+        <!-- <NavigationMenu.Link href="{base}/about/team" class={menuItemStyle}>Amazon Wishlist</NavigationMenu.Link> -->
       </NavigationMenu.Content>
     </NavigationMenu.Item>
   </NavigationMenu.List>
@@ -86,7 +87,7 @@
     
     <!-- Home (Direct Link) -->
         <NavigationMenu.Item>
-          <NavigationMenu.Link href="/" class={navItemStyle}>
+          <NavigationMenu.Link href="{base}/" class={navItemStyle}>
             Home
           </NavigationMenu.Link>
         </NavigationMenu.Item>
@@ -97,8 +98,8 @@
             About
           </NavigationMenu.Trigger>
           <NavigationMenu.Content class={mobileMenuStyle}>
-            <NavigationMenu.Link href="/about/mission" class={menuItemStyle}>Mission</NavigationMenu.Link>
-            <NavigationMenu.Link href="/about/team" class={menuItemStyle}>Team</NavigationMenu.Link>
+            <NavigationMenu.Link href="{base}/about/mission" class={menuItemStyle}>Mission</NavigationMenu.Link>
+            <NavigationMenu.Link href="{base}/about/team" class={menuItemStyle}>Team</NavigationMenu.Link>
           </NavigationMenu.Content>
         </NavigationMenu.Item>
 
@@ -109,8 +110,8 @@
           </NavigationMenu.Trigger>
           <NavigationMenu.Content class={mobileMenuStyle}>
             <NavigationMenu.Link href="https://docs.google.com/forms/d/e/1FAIpQLSex7ofV5lnFsOv8iaiE3gnFHlf3VlCpBAWfHtzSpVJ35lUb3g/viewform?usp=header" class={menuItemStyle}>Request Books</NavigationMenu.Link>
-            <NavigationMenu.Link href="/about/books" class={menuItemStyle}>Our Books</NavigationMenu.Link>
-            <!-- <NavigationMenu.Link href="/about/books" class={menuItemStyle}>FAQ</NavigationMenu.Link> -->
+            <NavigationMenu.Link href="{base}/about/books" class={menuItemStyle}>Our Books</NavigationMenu.Link>
+            <!-- <NavigationMenu.Link href="{base}/about/books" class={menuItemStyle}>FAQ</NavigationMenu.Link> -->
           </NavigationMenu.Content>
         </NavigationMenu.Item>
 
@@ -120,15 +121,15 @@
             Resources
           </NavigationMenu.Trigger>
           <NavigationMenu.Content class={mobileMenuStyle}>
-            <NavigationMenu.Link href="/resources/how-to" class={menuItemStyle}>How to Guides</NavigationMenu.Link>
-            <NavigationMenu.Link href="/resources/state-coip" class={menuItemStyle}>State Resources for Children</NavigationMenu.Link>
-            <NavigationMenu.Link href="/resources/national-coip" class={menuItemStyle}>National Resources for Children</NavigationMenu.Link>
+            <NavigationMenu.Link href="{base}/resources/how-to" class={menuItemStyle}>How to Guides</NavigationMenu.Link>
+            <NavigationMenu.Link href="{base}/resources/state-coip" class={menuItemStyle}>State Resources for Children</NavigationMenu.Link>
+            <NavigationMenu.Link href="{base}/resources/national-coip" class={menuItemStyle}>National Resources for Children</NavigationMenu.Link>
           </NavigationMenu.Content>
         </NavigationMenu.Item>
 
         <!-- Contact Us (Direct Link) -->
         <NavigationMenu.Item>
-          <NavigationMenu.Link href="/contact" class={navItemStyle}>
+          <NavigationMenu.Link href="{base}/contact" class={navItemStyle}>
             Contact Us
           </NavigationMenu.Link>
         </NavigationMenu.Item>
@@ -140,8 +141,8 @@
             Donate
           </NavigationMenu.Trigger>
           <NavigationMenu.Content class={mobileMenuStyle}>
-            <NavigationMenu.Link href="/https://secure.givelively.org/donate/building-bonds-through-books" class={menuItemStyle}>Donate Online</NavigationMenu.Link>
-            <!-- <NavigationMenu.Link href="/about/team" class={menuItemStyle}>Amazon Wishlist</NavigationMenu.Link> -->
+            <NavigationMenu.Link href="{base}/https://secure.givelively.org/donate/building-bonds-through-books" class={menuItemStyle}>Donate Online</NavigationMenu.Link>
+            <!-- <NavigationMenu.Link href="{base}/about/team" class={menuItemStyle}>Amazon Wishlist</NavigationMenu.Link> -->
           </NavigationMenu.Content>
         </NavigationMenu.Item>
       </NavigationMenu.List>
