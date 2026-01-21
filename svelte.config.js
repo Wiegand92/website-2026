@@ -11,7 +11,8 @@ const config = {
       fallback: 'index.html' // Serves index.html for unprerendered routes
     }) },
 	paths: {
-			base: process.argv.includes('dev') ? '' : "/website-2026"
+		relative: false,
+		base: process.argv.includes('dev') ? '' : "/website-2026"
 	}
 };
 
