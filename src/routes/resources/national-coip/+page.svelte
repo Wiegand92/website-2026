@@ -6,7 +6,7 @@
         { title: "Additional National Resources", file: "/national-coip/Additional National Resources.docx", pdf: false }
     ];
 </script>
-<h1 class="text-4xl font-bold text-(--bbtb-foreground) my-8 text-center">How-To Guides for Supporting Incarcerated Loved Ones</h1>
+<h1 class="text-4xl font-bold text-(--bbtb-foreground) my-8 text-center">National Resources for Children of Incarcerated Parents</h1>
 {#each files as file}
     {#if file.pdf === true}
         <ResourceDisplay resources={[{title: file.title, file: file.file}]} pdf={true} />
