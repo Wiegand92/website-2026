@@ -15,7 +15,7 @@ const config = {
       		fallback: 'index.html' // Serves index.html for unprerendered routes
 		}), 
 		paths: {
-			base: prod === 'production' ? '/website-2026' : '',
+			base: prod ? '/website-2026' : '',
 			relative: false
 		}
 	}
