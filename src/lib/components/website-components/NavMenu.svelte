@@ -38,7 +38,7 @@
         Request Books
       </NavigationMenu.Trigger>
       <NavigationMenu.Content class={menuStyle}>
-        <NavigationMenu.Link href="https://docs.google.com/forms/d/e/1FAIpQLSex7ofV5lnFsOv8iaiE3gnFHlf3VlCpBAWfHtzSpVJ35lUb3g/viewform?usp=header" class={menuItemStyle}>Request Books</NavigationMenu.Link>
+        <NavigationMenu.Link href="https://docs.google.com/forms/d/e/1FAIpQLSex7ofV5lnFsOv8iaiE3gnFHlf3VlCpBAWfHtzSpVJ35lUb3g/viewform?usp=header" target="_blank" class={menuItemStyle}>Request Books</NavigationMenu.Link>
         <NavigationMenu.Link href="{base}/about/books" class={menuItemStyle}>Our Books</NavigationMenu.Link>
         <!-- <NavigationMenu.Link href="{base}/about/books" class={menuItemStyle}>FAQ</NavigationMenu.Link> -->
       </NavigationMenu.Content>
@@ -109,7 +109,7 @@
             Request Books
           </NavigationMenu.Trigger>
           <NavigationMenu.Content class={mobileMenuStyle}>
-            <NavigationMenu.Link href="https://docs.google.com/forms/d/e/1FAIpQLSex7ofV5lnFsOv8iaiE3gnFHlf3VlCpBAWfHtzSpVJ35lUb3g/viewform?usp=header" class={menuItemStyle}>Request Books</NavigationMenu.Link>
+            <NavigationMenu.Link href="https://docs.google.com/forms/d/e/1FAIpQLSex7ofV5lnFsOv8iaiE3gnFHlf3VlCpBAWfHtzSpVJ35lUb3g/viewform?usp=header" target="_blank" class={menuItemStyle}>Request Books</NavigationMenu.Link>
             <NavigationMenu.Link href="{base}/about/books" class={menuItemStyle}>Our Books</NavigationMenu.Link>
             <!-- <NavigationMenu.Link href="{base}/about/books" class={menuItemStyle}>FAQ</NavigationMenu.Link> -->
           </NavigationMenu.Content>
