@@ -2,7 +2,7 @@
     import instagramIcon from '$lib/assets/images/icons/instagram-1.webp';
     import facebookIcon from '$lib/assets/images/icons/facebook-1.webp';
 </script>
-<div class="container flex w-full p-8 lg:flex-row lg:justify-around flex-col gap-8">
+<div class="container flex w-full min-w-full p-8 lg:flex-row lg:justify-around flex-col gap-8">
     <div class="content contact">
         <h4>Contact Us</h4>
         <a href="mailto:buildingbondsthroughbooks@gmail.com" class='hover:text-(--bbtb-pink) transition-colors duration-300 ease-in-out'>
