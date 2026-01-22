@@ -15,6 +15,7 @@ const config = {
       		fallback: 'index.html' // Serves index.html for unprerendered routes
 		}), 
 		paths: {
+			assets: prod ? '/website-2026' : '',
 			base: prod ? '/website-2026' : '',
 			relative: false
 		}
