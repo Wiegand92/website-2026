@@ -1,4 +1,4 @@
-<div class='container flex  w-full p-2 flex-col items-center lg:flex-row lg:justify-around'>
+<div class='container flex min-w-full p-2 flex-col items-center lg:flex-row lg:justify-around'>
     <div class='card'>
         <p>
             2.7 million American children have a parent that's incarcerated and more than 5 million children have had a parent in prison or jail at some point in their lives
