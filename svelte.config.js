@@ -2,7 +2,6 @@ import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 const prod = process.env.NODE_ENV === 'production'
-console.log(prod ? "Production build" : "Development build");
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -16,7 +15,7 @@ const config = {
       		fallback: 'index.html' // Serves index.html for unprerendered routes
 		}), 
 		paths: {
-			base: prod ? '/website-2026' : '',
+			base: '/website-2026',
 			relative: false
 		}
 	}
