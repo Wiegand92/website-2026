@@ -5,12 +5,12 @@
 <div class='container flex min-w-full p-2 flex-col items-center lg:flex-row justify-around'>
     <div class={cardStyles}>
         <p>
-            2.7 million American children have a parent that's incarcerated and more than 5 million children have had a parent in prison or jail at some point in their lives
+            2.7 million American children have a parent that's incarcerated and more than 5 million children have had a parent in prison or jail at some point in their lives.
         </p>
     </div>
     <div class={cardStyles}>
         <p>
-            In 2022, Building Bonds Through Books sent out 32 of our books about parent incarceration.
+            As of 2026, Building Bonds Through Books has supported over 75 families impacted by parental incarceration.
         </p>
     </div>
 </div>
