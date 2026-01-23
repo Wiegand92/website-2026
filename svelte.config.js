@@ -12,7 +12,7 @@ const config = {
 	kit: { 
 		adapter: adapter({
 			pages: 'docs', // Output directory for GH Pages
-      		fallback: 'index.html' // Serves index.html for unprerendered routes
+      		fallback: '/website-2026' // Serves index.html for unprerendered routes
 		}), 
 		paths: {
 			base: prod ? '/website-2026' : '',
