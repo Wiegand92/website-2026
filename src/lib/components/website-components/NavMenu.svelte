@@ -70,7 +70,7 @@
       </NavigationMenu.Trigger>
       <NavigationMenu.Content class={menuStyle}>
         <NavigationMenu.Link href="https://secure.givelively.org/donate/building-bonds-through-books" target="_blank" class={menuItemStyle}>Donate Online</NavigationMenu.Link>
-        <!-- <NavigationMenu.Link href={resolve("/about/team")} class={menuItemStyle}>Amazon Wishlist</NavigationMenu.Link> -->
+        <NavigationMenu.Link href={resolve("/amazon-wishlist")} class={menuItemStyle}>Amazon Wishlist</NavigationMenu.Link>
       </NavigationMenu.Content>
     </NavigationMenu.Item>
   </NavigationMenu.List>
@@ -141,7 +141,7 @@
           </NavigationMenu.Trigger>
           <NavigationMenu.Content class={mobileMenuStyle}>
             <NavigationMenu.Link href="https://secure.givelively.org/donate/building-bonds-through-books" target="_blank" class={menuItemStyle}>Donate Online</NavigationMenu.Link>
-            <!-- <NavigationMenu.Link href={resolve("/about/team")} class={menuItemStyle}>Amazon Wishlist</NavigationMenu.Link> -->
+            <NavigationMenu.Link href={resolve("/amazon-wishlist")} class={menuItemStyle}>Amazon Wishlist</NavigationMenu.Link>
           </NavigationMenu.Content>
         </NavigationMenu.Item>
       </NavigationMenu.List>
